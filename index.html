@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- 브라우저에게 HTML의 버전 및 웹브라우저 내용을 
+    잘 출력할 수 있도록 도와주는 역할-->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내가 만드는 사이트</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <!-- head 태그는 문서를 위한 여러가지 정보를 제공하는 공간
+    특히 SEO가 대단히 중요하다.
+    서비스를 아무리 잘 만들어도 검색이 되지 않고,
+    사용자가 공유하지 못하면 서비스는 사라진다. -->
+  <body>
+    <!-- 먼저 레이아웃을 잡기위해 주석작성 및 div를 사용한다.
+        div는 레이아웃용 이외에는 용도가 없다. -->
+    <!-- 상단영역 -->
+    <!-- 시멘틱 태그 : div를 대신해서 사용하는 태그, 태그 내용에 의미를 부여하는 태그
+        ex) header, footer, main... -->
+    <header class="header">
+      <div class="layout">
+        <!-- 로고 -->
+        <!-- js(자바스크립트)로 제어를 하고 싶으면 id를 준다.(div id="") -->
+        <!-- css로 꾸미고 싶으면 class를 준다.(div class="") -->
+        <div id="logo" class="header-logo">
+          <a href="/" class="header-logo-link">
+            <img src="./images/etc/logo-kakao.png" alt="카카오블로그" />
+          </a>
+          <div class="header-logo-motion">
+            <img src="./images/etc/logo-blog01.png" alt="블로그 이미지" />
+          </div>
+        </div>
+        <!-- 메뉴 및 검색창 -->
+        <div class="navigation">
+          <a href="#">소식</a>
+          <a href="#">팀 & 크루</a>
+          <a href="#">영입</a>
+          <button id="search">
+            <img src="./images/icon/icon-search.png" alt="검색 이미지" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- 내용영역 -->
+    <main class="main">
+      <div class="layout">
+        <!-- 슬라이드영역 -->
+        <div class="main-slide">
+          <!-- 왼쪽슬라이드 -->
+          <div class="left">
+            <!-- 교체 가능 -->
+            <div class="visual-slide">
+              <a href="#">
+                <img src="./images/b1.png" alt="비주얼 슬라이드" />
+              </a>
+            </div>
+          </div>
+          <!-- 오른쪽슬라이드 -->
+          <div class="right">
+            <!-- 교체 가능 -->
+            <div class="card-slide">
+              <a href="#">
+                <img src="./images/c3.png" alt="카드 슬라이드" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 내용영역 -->
+        <div class="main-content">
+          <!-- 왼쪽영역 -->
+          <div class="left">
+            <!-- 최신 목록 -->
+            <div class="list-new-wrap">
+              <h4 class="list-title">NEW. 따끈따끈 새로 나온 글 🔥</h4>
+              <div class="list-thum-wrap">
+                <!--//Start 게시글 목록 -->
+                <div class="list">
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/br.png" alt="썸네일 이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_aihealthcare.png" alt="AI" />
+                      <span>AI Healthcare</span>
+                    </div>
+                    <h5 class="thum-title">
+                      🎥 카카오브레인이 헬스케어를 하는 이유? (Feat.
+                      최윤섭의디지털헬스케어)
+                    </h5>
+                    <span class="thum-date">2024.02.08</span>
+                  </a>
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/b2.png" alt="썸네일 이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_krew.png" alt="Krew" />
+                      <span>Krew</span>
+                    </div>
+                    <h5 class="thum-title">
+                      헬스케어의 마일스톤을 찍고 있습니다 🪨
+                    </h5>
+                    <span class="thum-date">2024.02.08</span>
+                  </a>
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="썸네일 이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_krew.png" alt="Krew" />
+                      <span>Krew</span>
+                    </div>
+                    <h5 class="thum-title">
+                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
+                    </h5>
+                    <span class="thum-date">2024.02.08</span>
+                  </a>
+                </div>
+                <!--//End -->
+              </div>
+            </div>
+            <!-- 배너 -->
+            <div class="banner">
+              <a href="#">
+                <img src="./images/etc/1pc.png" alt="배너" />
+              </a>
+            </div>
+            <!-- 카테고리 목록 -->
+            <div class="list-cate-wrap">
+              <h4 class="list-title">Editor’s Pick 🏃🏻‍♀️🏃‍♂️🏃🏽</h4>
+              <div class="list-thum-wrap">
+                <!--//Start 게시글 목록 -->
+                <div class="list">
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="썸네일 이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_krew.png" alt="Krew" />
+                      <span>Krew</span>
+                    </div>
+                    <h5 class="thum-title">
+                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
+                    </h5>
+                    <span class="thum-date">2024.02.08</span>
+                  </a>
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="썸네일 이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_krew.png" alt="Krew" />
+                      <span>Krew</span>
+                    </div>
+                    <h5 class="thum-title">
+                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
+                    </h5>
+                    <span class="thum-date">2024.02.08</span>
+                  </a>
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="썸네일 이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_krew.png" alt="Krew" />
+                      <span>Krew</span>
+                    </div>
+                    <h5 class="thum-title">
+                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
+                    </h5>
+                    <span class="thum-date">2024.02.08</span>
+                  </a>
+                </div>
+                <!--//End -->
+              </div>
+              <div class="list-thum-wrap">
+                <!--//Start 게시글 목록 -->
+                <div class="list">
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="썸네일 이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_krew.png" alt="Krew" />
+                      <span>Krew</span>
+                    </div>
+                    <h5 class="thum-title">
+                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
+                    </h5>
+                    <span class="thum-date">2024.02.08</span>
+                  </a>
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="썸네일 이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_krew.png" alt="Krew" />
+                      <span>Krew</span>
+                    </div>
+                    <h5 class="thum-title">
+                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
+                    </h5>
+                    <span class="thum-date">2024.02.08</span>
+                  </a>
+                  <a href="#" class="thum">
+                    <div class="thum-img">
+                      <img src="./images/c1.jpg" alt="썸네일 이미지" />
+                    </div>
+                    <div class="thum-cate">
+                      <img src="./images/icon/ic_krew.png" alt="Krew" />
+                      <span>Krew</span>
+                    </div>
+                    <h5 class="thum-title">
+                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
+                    </h5>
+                    <span class="thum-date">2024.02.08</span>
+                  </a>
+                </div>
+                <!--//End -->
+              </div>
+            </div>
+          </div>
+          <!-- 오른쪽영역 -->
+          <div class="right">
+            <!-- 카드 전체 목록 -->
+            <div class="list-card"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 하단영역 -->
+    <footer class="footer">
+      <!-- 푸터상단 -->
+      <div class="footer-main">
+        <div class="layout">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <!-- 푸터하단 -->
+      <div class="footer-copy">
+        <div class="layout">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
