@@ -4,6 +4,7 @@
   min-height: 600px;
   margin: 0px auto;
   margin-bottom: 60px;
+  margin-top: 67px;
 }
 .layout {
 }
@@ -50,6 +51,7 @@
 .main-content {
   margin-top: 60px;
   display: flex;
+  justify-content: space-between;
 }
 .main-content .left {
 }
@@ -152,6 +154,4 @@
   object-fit: cover;
 }
 .list-cate-wrap {
-}
-.main-content .right {
 }
