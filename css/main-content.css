@@ -24,6 +24,7 @@
 }
 .thum {
   max-width: 260px;
+  width: 22.033vw;
   text-decoration: none;
 }
 .thum:hover .thum-img {
@@ -109,26 +110,7 @@
 }
 .list-cate-wrap {
 }
-@media screen and (max-width: 1120px) {
-  .thum {
-    max-width: 255px;
-  }
-}
-@media screen and (max-width: 1090px) {
-  .thum {
-    max-width: 250px;
-  }
-}
-@media screen and (max-width: 1060px) {
-  .thum {
-    max-width: 245px;
-  }
-}
-@media screen and (max-width: 1040px) {
-  .thum {
-    max-width: 240px;
-  }
-}
+
 @media screen and (max-width: 1024px) {
   .main-content .left {
     width: 100%;

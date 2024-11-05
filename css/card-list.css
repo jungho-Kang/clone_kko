@@ -54,9 +54,28 @@
   border-color: #1e1e1e;
   border-radius: 10px;
 }
+.list-card-bt-wrap {
+  display: flex;
+  justify-content: center;
+}
+/* 하단 카드 슬라이드 */
+.mb-card-slide {
+  margin-top: 60px;
+  display: none;
+}
+/* js로 변경 예정 */
+.mb-card-slide-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
 
 @media screen and (max-width: 1024px) {
   .main-content .right {
     display: none;
+  }
+
+  .mb-card-slide {
+    display: block;
   }
 }
