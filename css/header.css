@@ -11,6 +11,11 @@
   padding-top: 15px;
   background-color: #fff;
 }
+
+.header-active {
+  border-bottom: 1px solid red !important;
+}
+
 .header .layout {
   display: flex;
   padding: 0 5px;
