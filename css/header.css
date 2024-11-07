@@ -74,7 +74,6 @@
 }
 /* 모바일 메뉴 배경 */
 .bg-mb-menu {
-  display: none;
   /* 웹브라우저 고정 */
   position: fixed;
   top: 0;
@@ -82,14 +81,34 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
+  /* 투명도 */
+  opacity: 0;
+  transition: all 0.5s;
+  visibility: hidden;
+  /* display: none; */
+}
+.bg-mb-menu-active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  /* display: block !important; */
 }
 .mb-menu {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 68px;
   left: 0;
   width: 100%;
   background-color: #fff;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.5s;
+  transition-delay: 0.15s;
+  height: 0;
+}
+.mb-menu-active {
+  /* display: block !important; */
+  height: 110px !important;
+  visibility: visible !important;
 }
 .mb-menu .layout {
   padding: 20px 40px;
