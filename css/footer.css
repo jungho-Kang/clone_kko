@@ -107,11 +107,11 @@
   display: block;
   width: 120px;
   height: 40px;
-  padding: 13px 20px;
+  padding: 10px 0;
   color: #1e1e1e;
   font-weight: 700;
   text-decoration: none;
-  white-space: nowrap;
+  text-align: center;
   background-color: #ffc600;
   border-radius: 20px;
 }

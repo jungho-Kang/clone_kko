@@ -62,12 +62,14 @@
 .mb-card-slide {
   margin-top: 60px;
   display: none;
+  overflow: hidden;
 }
 /* js로 변경 예정 */
 .mb-card-slide-wrap {
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  width: 1160px;
 }
 
 @media screen and (max-width: 1024px) {

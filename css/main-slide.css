@@ -26,6 +26,19 @@
   height: 100%;
   object-fit: cover;
 }
+
+.visual-slide .swiper-pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+.visual-slide .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  width: 20px;
+}
 .main-slide .right {
   width: 31.355vw;
   height: 39.83vw;
