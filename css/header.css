@@ -1,13 +1,27 @@
 /* 상단영역 */
 .header {
-  max-width: 1170px;
-  height: 67px;
-  margin-left: auto;
-  margin-right: auto;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 68px;
+  border-bottom: 1px solid #fff;
+  z-index: 999;
   padding-top: 15px;
+  background-color: #fff;
 }
+
+.header-active {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
+}
+
 .header .layout {
   display: flex;
+  padding: 0 5px;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -38,19 +52,90 @@
   gap: 20px;
 }
 .navigation a {
-  text-decoration: none;
   color: #1e1e1e;
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
 }
 .navigation button {
-  border: none;
-  background-color: #fff;
   width: 24px;
   height: 24px;
+  border: none;
+  background-color: #fff;
   cursor: pointer;
 }
 .navigation button img {
   width: 100%;
   height: 100%;
+}
+
+#mb-menu-bt {
+  display: none;
+}
+/* 모바일 메뉴 배경 */
+.bg-mb-menu {
+  /* 웹브라우저 고정 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* 투명도 */
+  opacity: 0;
+  transition: all 0.5s;
+  visibility: hidden;
+  z-index: 9;
+  /* display: none; */
+}
+.bg-mb-menu-active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  /* display: block !important; */
+}
+.mb-menu {
+  /* display: none; */
+  position: fixed;
+  top: 68px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.5s;
+  transition-delay: 0.15s;
+  height: 0;
+  z-index: 9;
+}
+.mb-menu-active {
+  /* display: block !important; */
+  height: 150px !important;
+  visibility: visible !important;
+}
+.mb-menu .layout {
+  padding: 20px 40px;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+.mb-menu .layout a {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* 헤더 반응형 */
+@media screen and (max-width: 1024px) {
+  .navigation a {
+    display: none;
+  }
+  #mb-menu-bt {
+    display: block;
+  }
+  .bg-mb-menu {
+    /* display: block; */
+  }
+  .mb-menu {
+    /* display: block; */
+  }
 }

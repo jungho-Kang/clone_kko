@@ -1,0 +1,78 @@
+.main-slide {
+  display: flex;
+  /* 20/1180*100 = 1.695 */
+  gap: 1.695vw;
+}
+.main-slide .left {
+  /* 770/1180*100 = 65.254 */
+  width: 65.254vw;
+  /* 470/1180*100 = 39.83 */
+  height: 39.83vw;
+  max-width: 770px;
+  max-height: 470px;
+}
+.visual-slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.visual-slide a {
+  width: 100%;
+  height: 100%;
+}
+.visual-slide a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visual-slide .swiper-pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+.visual-slide .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  width: 20px;
+}
+.main-slide .right {
+  width: 31.355vw;
+  height: 39.83vw;
+  max-width: 370px;
+  max-height: 470px;
+}
+.card-slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card-slide a {
+  width: 100%;
+  height: 100%;
+}
+.card-slide a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 가로 너비 대비 세로가 평상시에도 변한다. */
+@media screen and (max-width: 1024px) {
+  .main-slide {
+    display: block;
+    gap: 0;
+  }
+  .main-slide .left {
+    width: 100%;
+    height: 83.05vw;
+    max-width: 100%;
+    max-height: 980px;
+  }
+  .main-slide .right {
+    display: none;
+  }
+}
