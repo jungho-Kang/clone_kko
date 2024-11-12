@@ -46,17 +46,21 @@ window.addEventListener("load", function () {
           crossFade: true,
         },
       });
+
+      // 추가 1 : 먼저 멈춘다.
       headerLogo.autoplay.stop();
+      // 추가 2 : 마우스 오버되면 다시 플레이
       headerLogoTag.addEventListener("mouseenter", function () {
         headerLogo.autoplay.start();
       });
+      // 추가 3 : 마우스 아웃되면 멈춤 및 첫 슬라이드로 이동
       headerLogoTag.addEventListener("mouseleave", function () {
         headerLogo.autoplay.stop();
-        headerLogo.slideToLoop(0, 500, false);
+        headerLogo.slideToLoop(0, 500, false); // 무조건 첫 슬라이드로 가라.
       });
     })
     .catch(function (error) {
-      console.log(error);
+      // console.log(error);
     });
   //   const logoData;
 });

@@ -2,12 +2,12 @@ window.addEventListener("load", function () {
   const CARDS_DATA_URL = "/apis/cards.json";
   fetch(CARDS_DATA_URL)
     .then(function (response) {
-      console.log("카드 : ", response);
+      // console.log("카드 : ", response);
       const result = response.json();
       return result;
     })
     .then(function (result) {
-      console.log("카드 결과 : ", result);
+      // console.log("카드 결과 : ", result);
       let htmlCards = "";
       for (let i = 0; i < result.length; i++) {
         const obj = result[i];
