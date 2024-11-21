@@ -1,5 +1,3 @@
-import React from "react";
-
 function MbCardSlide() {
   return (
     <div className="mb-card-slide">
